@@ -1,15 +1,27 @@
-function printMessage(msg){
-	var div = document.createElement('div');
-	div.innerHTML = msg;
-	document.getElementById('messages').appendChild(div);
+var computerMove, randomNumber;
+randomNumber = Math.floor(Math.random() * 3 + 1);
+console.log('wylosowana liczba to: ' + randomNumber);
+if (randomNumber == '1') {
+  computerMove = 'kamień';
+} else {
+  computerMove = 'nieznany ruch';
 }
-
-function clearMessages(){
-	document.getElementById('messages').innerHTML = '';
+printMessage('Mój ruch: ' + computerMove);
+randomNumber = Math.floor(Math.random() * 3 + 1);
+console.log('wylosowana liczba to:' + randomNumber);
+if (randomNumber == '2') {
+  computerMove = 'papier';
+} else {
+  computerMove = 'nieznany ruch';
 }
-
-var computerMove;
-computerMove = 'kamień';
-printMessage('Zagrałem ' + computerMove + '! Jeśli Twój ruch to papier, to wygrywasz!');
-computerMove = 'papier';
-printMessage('Zagrałem' + computerMove + '! Jeśli Twój ruch to nożyczki, to wygrywasz!');
+printMessage('Mój ruch:' + computerMove);
+randomNumber = Math.round(Math.random() * 3 + 1);
+console.log('wylosowana liczba to:' + randomNumber);
+if (randomNumber == '3') {
+  computerMove = 'nożyce';
+} else {
+  computerMove = 'nieznany ruch';
+}
+printMessage('Mój ruch:' + computerMove);
+Step JavaScript
+Run JavaScript
